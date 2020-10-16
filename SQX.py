@@ -1,14 +1,9 @@
 import turtle
 def squarx(t, h, p):
     if p!=0:
-        t.forward(h)
-        t.right(90)
-        t.forward(h)
-        t.right(90)
-        t.forward(h)
-        t.right(90)
-        t.forward(h)
-        t.right(90)
+        for e in range (4):
+            t.forward(h)
+            t.right(90)
         t.right(+10)
         squarx(t, h-3, p-1)
 
